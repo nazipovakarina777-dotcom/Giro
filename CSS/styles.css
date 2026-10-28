@@ -82,7 +82,8 @@ ul {
 
 /* --- Главный баннер --- */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('/IMG/scooter.png') center/cover no-repeat;
+    /* ВАЖНО: Здесь путь '../IMG/scooter.png', так как файл CSS лежит в папке CSS */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../IMG/scooter.png') center/cover no-repeat;
     height: 776px;
     display: flex;
     align-items: center;
