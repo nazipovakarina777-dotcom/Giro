@@ -28,7 +28,7 @@ ul {
     padding: 0 20px;
 }
 
-/* --- Шапка --- */
+/* Шапка */
 .header {
     background: #fff;
     position: relative;
@@ -80,9 +80,8 @@ ul {
     font-size: 14px;
 }
 
-/* --- Главный баннер --- */
+/* Главный баннер */
 .hero {
-    /* ВАЖНО: Здесь путь '../IMG/scooter.png', так как файл CSS лежит в папке CSS */
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../IMG/scooter.png') center/cover no-repeat;
     height: 776px;
     display: flex;
@@ -118,7 +117,7 @@ ul {
     border: none;
 }
 
-/* --- Преимущества --- */
+/* Преимущества */
 .advantages {
     padding: 100px 0;
 }
@@ -229,7 +228,7 @@ ul {
     opacity: 0.8;
 }
 
-/* --- Особенности --- */
+/* Особенности */
 .features {
     padding: 100px 0;
 }
@@ -260,7 +259,7 @@ ul {
     line-height: 1.5;
 }
 
-/* --- Каталог --- */
+/* Каталог */
 .catalog {
     background: #FBFBFB;
     padding: 80px 0;
@@ -335,7 +334,7 @@ ul {
     width: 100%;
 }
 
-/* --- Консультанты --- */
+/* Консультанты */
 .consultants {
     padding: 100px 0;
 }
@@ -397,7 +396,7 @@ ul {
     cursor: pointer;
 }
 
-/* --- Бренды --- */
+/* Бренды */
 .brands {
     background: #FBFBFB;
     padding: 50px 0;
@@ -417,7 +416,7 @@ ul {
     text-transform: uppercase;
 }
 
-/* --- Полезная информация --- */
+/* Полезная информация */
 .useful {
     padding: 100px 0;
 }
@@ -474,7 +473,7 @@ ul {
     padding: 0 20px;
 }
 
-/* --- Подвал --- */
+/* Подвал */
 .footer {
     background: #FBFBFB;
     padding: 80px 0;
@@ -512,4 +511,172 @@ ul {
     font-size: 14px;
     color: #919FB1;
     line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header .top-bar,
+    .header .main-nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .header .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .advantages {
+        padding: 50px 0;
+    }
+
+    .advantages .section-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .advantages-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .about h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .features {
+        padding: 50px 0;
+    }
+
+    .features h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-list li,
+    .features-desc {
+        font-size: 16px;
+    }
+
+    .catalog {
+        padding: 50px 0;
+    }
+
+    .catalog-tabs {
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .consultants {
+        padding: 50px 0;
+    }
+
+    .consultants h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .consultants-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .consultant-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .consultant-info {
+        align-items: center;
+    }
+
+    .useful {
+        padding: 50px 0;
+    }
+
+    .useful h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .useful-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 15px;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+
+    .newsletter-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-group input,
+    .btn-orange,
+    .btn-white {
+        width: 100%;
+    }
 }
